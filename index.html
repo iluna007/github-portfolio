@@ -1,13 +1,255 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>github-portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Put your site title here -->
+  <title>
+    Iker Luna | Full Stack Developer | Web Platform Development | Data-Visualization based in San Jose, Costa Rica.
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#Collaborations" class="nav__link">Collaborations</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Iker Luna</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>Full Stack Developer</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Sounding-ice</h3>
+              <p>
+                A research-driven web platform for browsing and organizing field recordings through thematic categories, designed to support public access, education, and environmental research.
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+                <li>Vite</li>
+                <li>React</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://sounding-ice.ca/" target="_blank" rel="noopener noreferrer" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/iluna007/soundingice" title="View Source Code" target="_blank" rel="noopener noreferrer">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/soundingice1.jpg" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Berta Cáceres — Spatial-Temporal Platform</h3>
+              <p>
+                An interactive cartographic platform that visualizes and cross-references thousands of events over time and territory, enabling pattern analysis within a human-rights investigation.
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+                <li>Vite</li>
+                <li>React</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://bertacaceres.re-presentare.org/" target="_blank" rel="noopener noreferrer" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/iluna007/berta" title="View Source Code" target="_blank" rel="noopener noreferrer">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/berta1.jpg" class="work__image" alt="Project 2" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Finnja Willner — Artist Portfolio</h3>
+              <p>
+                A lightweight, responsive portfolio website translating an audiovisual artistic practice into clear information architecture, page rhythm, and a focused user experience.
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+                <li>Vite</li>
+                <li>React</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://finnjawillner.de/" target="_blank" rel="noopener noreferrer" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/iluna007/Portfolio_06_Finnjaweb" title="View Source Code" target="_blank" rel="noopener noreferrer">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/finnja1.jpg" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Collaborations ***** -->
+
+    <section class="client" id="Collaborations">
+      <div class="row">
+        <h2>Collaborations</h2>
+        <div class="client__logos">
+          <!-- Add logos of the Collaborations or companies you'have worked with. -->
+          <img src="./images/FA.png" class="client__logo" alt="Company 2" />
+          <img src="./images/RE.png" class="client__logo" alt="Company 3" />
+          <img src="./images/UCR.jpg" class="client__logo" alt="Company 1" />
+       
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+             <p>
+              I was trained as an architect, where my interest in code first emerged through
+              <a href="https://iaac.net/" target="_blank" rel="noopener noreferrer">computational design at IAAC</a>,
+              as a way of thinking through form, systems, and relationships beyond static representation.
+              This interest deepened through spatial analysis and research practices at
+              <a href="https://research-architecture.org/" target="_blank" rel="noopener noreferrer">
+                Centre for Research Architecture
+              </a>
+              and through collaborative work with
+              <a href="https://forensic-architecture.org/" target="_blank" rel="noopener noreferrer">
+                Forensic Architecture
+              </a>,
+              where code, data, and interfaces became tools for investigation and evidence.
+              Over the past two years, I have been working as a full-stack developer, building
+              research-driven web platforms that combine front-end development, data visualization,
+              and spatial thinking to turn complex information into clear, usable digital experiences.
+              In parallel, I work as a visiting lecturer at the
+              <a href="https://arquis.ucr.ac.cr/" target="_blank" rel="noopener noreferrer">
+                School of Architecture, University of Costa Rica
+              </a>.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="#" class="btn">My Resume</a>
+          </div>
+          
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/iker-luna.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          If you’re looking to build a fast, user-friendly website, need some advice or consultation, or simply want to say hi 👋, feel free to reach out. I’m always open to conversations, collaborations, and new ideas, and I’ll do my best to get back to you.
+The quickest way to reach me is by email ✉️.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:arquitectoikerluna@gmail.com" class="btn">arquitectoikerluna@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        
+        <li class="footer__social-link-item">
+          <a href="https://github.com/iluna007" title="Link to Github Profile" rel="noopener noreferrer">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/iker-l-05484b80/" rel="noopener noreferrer">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <p class="footer__text">
+        &copy; 2024 Iker Luna. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
 </html>
